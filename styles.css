@@ -561,8 +561,10 @@ h1 {
   grid-template-columns: 0.9fr 1.1fr;
   gap: 54px;
   align-items: center;
-  max-width: none;
-  padding: 64px max(28px, calc((100vw - var(--max)) / 2 + 28px)) 38px;
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 64px 28px 38px;
   background:
     linear-gradient(90deg, rgba(3, 13, 30, 0.96) 0%, rgba(3, 13, 30, 0.86) 42%, rgba(3, 13, 30, 0.18) 72%),
     linear-gradient(180deg, rgba(3, 13, 30, 0.16), rgba(3, 13, 30, 0.3)),
